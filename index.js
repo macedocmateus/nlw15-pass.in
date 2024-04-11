@@ -3,28 +3,28 @@ let participantes = [
         nome: 'Mateus Macedo',
         email: 'mateuscastromacedo@gmail.com',
         dataInscrição: new Date(2024, 2, 22, 19, 20),
-        dataCheckIn: new Date(2024, 2, 25, 22, 0),
+        dataCheckIn: null,
     },
 
     {
         nome: 'Ana Silva',
         email: 'anasilva@gmail.com',
         dataInscrição: new Date(2024, 2, 23, 10, 0),
-        dataCheckIn: new Date(2024, 2, 26, 14, 30),
+        dataCheckIn: null,
     },
     
     {
         nome: 'João Oliveira',
         email: 'joao.oliveira@hotmail.com',
         dataInscrição: new Date(2024, 2, 24, 15, 40),
-        dataCheckIn: new Date(2024, 2, 27, 18, 10),
+        dataCheckIn: null,
     },
     
     {
         nome: 'Maria Santos',
         email: 'mariasantos@yahoo.com',
         dataInscrição: new Date(2024, 2, 25, 8, 20),
-        dataCheckIn: new Date(2024, 2, 28, 11, 45),
+        dataCheckIn: null,
     },
     
     {
@@ -113,14 +113,16 @@ const criarNovoParticipante = (participante) => {
 </tr>
 `
 }
-    let output = ''
+    
+// substituir informação do HTML
+const atualizarLista = (participantes) => {
+    let output = ""
 
 // estrutura de repetição - loop
     for(let participante of participantes) {
         output = output + criarNovoParticipante(participante)
     }
-// substituir informação do HTML
-const atualizarLista = (participantes) => {
+    
     document.querySelector('tbody').innerHTML = output
 }
 
@@ -142,6 +144,21 @@ const adicionarParticipante = (event) => {
     atualizarLista(participantes)
 }
 
+
 const fazerCheckIn = (event) => {
-    alert('chegamos aqui')
+    
+    // confirmar se realmente quer o check-in
+    const mensagemConfirmacao = 'tem certeza que quer confirmar o check-in'
+    if (confirm(mensagemConfirmacao) == false) {
+        return
+    }
+    
+    // encontrar o participante dentro da lista
+    const participante = participantes.find((p) => {
+        return p.email == event.target.dataset.email
+    })
+    // atualizar o check-in do participante
+    participante.dataCheckIn = new Date()
+    // atualizar a lista de participantes  
+    atualizarLista(participantes)  
 }
