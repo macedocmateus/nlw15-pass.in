@@ -140,6 +140,17 @@ const adicionarParticipante = (event) => {
         dataCheckIn: null,
     }
 
+    // verificar se o participante já existe
+    const participanteExiste = participantes.find((p) => {
+        return p.email == participante.email
+    }
+)
+
+    if(participanteExiste) {
+        alert('Participante já existe')
+        return
+    }
+    
     participantes = [participante, ...participantes]
     atualizarLista(participantes)
 
