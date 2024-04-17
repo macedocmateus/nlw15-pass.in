@@ -1,4 +1,7 @@
 table {
+
+    border-collapse:  collapse;
+
     thead {
         font-size: 1.4rem;
         line-height: 1.6rem;
@@ -7,4 +10,34 @@ table {
 
 thead th, tbody td {
     padding: 1.2rem 1.6rem;
+}
+
+tbody {
+    td {
+        border-top: 1px solid #ffffff1a;
+        font-size: 1.3rem;
+        line-height: 1.5rem;
+        color: #c4c4cc;
+
+        strong {
+            color: #fff;
+            font-size: 1.4rem;
+            line-height: 1.6rem;
+            font-weight: 600;
+        }
+
+        small {
+            font-size: 1.2rem;
+            line-height: 1.6rem;
+        }
+
+        button {
+            all: unset;
+            color: #9ff9cc;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
 }

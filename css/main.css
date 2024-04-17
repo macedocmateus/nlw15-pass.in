@@ -20,6 +20,9 @@ body * {
   line-height: 140%;
 }
 
+table {
+  border-collapse: collapse;
+}
 table thead {
   font-size: 1.4rem;
   line-height: 1.6rem;
@@ -27,6 +30,30 @@ table thead {
 
 thead th, tbody td {
   padding: 1.2rem 1.6rem;
+}
+
+tbody td {
+  border-top: 1px solid rgba(255, 255, 255, 0.1019607843);
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  color: #c4c4cc;
+}
+tbody td strong {
+  color: #fff;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  font-weight: 600;
+}
+tbody td small {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+tbody td button {
+  all: unset;
+  color: #9ff9cc;
+}
+tbody td button:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=main.css.map */
