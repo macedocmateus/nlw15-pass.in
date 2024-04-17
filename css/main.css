@@ -20,6 +20,10 @@ body * {
   line-height: 140%;
 }
 
+header {
+  background-color: bisque;
+}
+
 table {
   border-collapse: collapse;
 }
