@@ -9,8 +9,24 @@
 }
 
 body {
-  background-color: rgb(66, 25, 216);
+  background-color: #121214;
+  color: #fff;
+}
+
+body * {
+  font-family: "roboto", sans-serif;
   font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 140%;
+}
+
+table thead {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+}
+
+thead th, tbody td {
+  padding: 1.2rem 1.6rem;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,3 +1,10 @@
+$bg-color: #121214;
+$base-font-size: 1.6rem;
+$primary-color: #fff;
+$primary-font-family: 'roboto', sans-serif;
+$primary-font-weight: 300;
+$primary-line-height: 140%;
+
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +16,15 @@
 }
 
 body {
-    background-color: aqua;
-    font-size: 1.6rem;
+    background-color: $bg-color;
+    color: $primary-color;
+    
+    
+}
+
+body * {
+    font-family: $primary-font-family;
+    font-size: $base-font-size;
+    font-weight: $primary-font-weight;
+    line-height: $primary-line-height;
 }
