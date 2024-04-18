@@ -1,0 +1,43 @@
+<h1 align="center"> 🎫 Pass.in 🎫</h1>
+
+<p align="center">
+Projeto realizado durante o evento NLW da Rocketseat utilizando html,css, sass e javascript.
+</p>
+
+<p align="center">
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;
+</p>
+
+<br>
+
+<p align="center">
+  <img alt="Interface de um sistema de inscrição em eventos" src="./capa-readme.png" width="100%">
+</p>
+
+## 🚀 Tecnologias
+
+Esse projeto foi desenvolvido com as seguintes tecnologias:
+
+-   HTML e CSS
+-   Javascript
+-   Sass
+-   Git e Github
+-   Figma
+
+## 💻 Projeto
+
+O Pass.in é um sistema web para inscrição e validação de usuários em eventos em geral. Clique <a href="https://nlw15-pass-d0z0g2mxa-mateus-projects-e6e374db.vercel.app/" target="_blank" rel="noopener noreferrer">aqui</a> para testar a página.
+
+## 🎨 Layout
+
+Clique <a href="https://www.figma.com/file/yKkZ8VZlxXS6gTxU0AaHh7/pass.in-(Community)?type=design&node-id=2007-1477&mode=design&t=xWD6OHkYMtkBINhn-0" target="_blank" rel="noopener noreferrer">aqui</a> para conhecer a prototipagem do projeto.
+<br>
+<br>
+<br>
+<br>
+
+<p align="center">
+Desenvolvido com ♥ by Mateus de Castro Macedo 👨‍💻
+</p>
