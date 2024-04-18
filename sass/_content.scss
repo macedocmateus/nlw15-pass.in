@@ -1,22 +1,92 @@
+$border: 1px solid #ffffff1a;
 
+form {
+    border: $border;
+    border-inline: none;
+    padding: 2rem 0;
+}
+
+fieldset {
+    border: none;
+
+    button {
+        width: fit-content;
+        border: 0;
+        background-color: #f48f56;
+        border-radius: 1rem;
+        padding: .7rem 2rem;
+
+        font: 700 1.2rem/2.4rem 'roboto', sans-serif;
+        color: #00292e;
+
+        &:hover {
+            background-color: #f78746;
+        }
+    }
+}
+
+.lista-participantes {
+    padding: 2rem 0;
+}
+
+.lista-participantes>div {
+    border: $border;
+    border-radius: .8rem;
+}
+
+fieldset>div {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.input-wrapper {
+    flex: 1;
+
+    align-items: center;
+    display: flex;
+    gap: 1.2rem;
+
+    border: $border;
+    border-radius: 1rem;
+
+    padding: .8rem 1.2rem;
+
+    font: 400 1.4rem/150% 'roboto', sans-serif;
+    color: #c4c4cc;
+}
+
+input {
+    all: unset;
+}
+
+fieldset legend,
+section h2 {
+
+    font: 700 1.6rem/140% 'roboto', sans-serif;
+    color: #e1e1e6;
+    padding-bottom: 1.6rem;
+
+}
 
 table {
 
-    border-collapse:  collapse;
+    border-collapse: collapse;
 
     thead {
         font-size: 1.4rem;
         line-height: 1.6rem;
+        text-align: left;
     }
 }
 
-thead th, tbody td {
+thead th,
+tbody td {
     padding: 1.2rem 1.6rem;
 }
 
 tbody {
     td {
-        border-top: 1px solid #ffffff1a;
+        border-top: $border;
         font-size: 1.3rem;
         line-height: 1.5rem;
         color: #c4c4cc;

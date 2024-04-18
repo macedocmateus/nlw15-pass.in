@@ -18,13 +18,10 @@ $primary-line-height: 140%;
 body {
     background-color: $bg-color;
     color: $primary-color;
-    
-    
 }
 
-body * {
-    font-family: $primary-font-family;
-    font-size: $base-font-size;
-    font-weight: $primary-font-weight;
-    line-height: $primary-line-height;
+.container {
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 2rem 3.2rem;
 }
