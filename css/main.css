@@ -38,6 +38,7 @@ fieldset button {
   background-color: #f48f56;
   border-radius: 1rem;
   padding: 0.7rem 2rem;
+  cursor: pointer;
   font: 700 1.2rem/2.4rem "roboto", sans-serif;
   color: #00292e;
 }
@@ -115,6 +116,7 @@ tbody td small {
 tbody td button {
   all: unset;
   color: #9ff9cc;
+  cursor: pointer;
 }
 tbody td button:hover {
   text-decoration: underline;
